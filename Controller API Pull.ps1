@@ -1,9 +1,9 @@
 param(
-	[string]$server = '192.168.1.14',
+	[string]$server = '169.254.1.1',
 	[string]$port = '8443',
 	[string]$site = 'default',
-	[string]$username = 'API',
-	[string]$password = 'Guiliani4',
+	[string]$username = 'username',
+	[string]$password = 'password',
 	[switch]$debug = $false
 )
 
