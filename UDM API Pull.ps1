@@ -60,7 +60,11 @@ $jsona = Invoke-WebRequest -UseBasicParsing -Uri "$controller/proxy/protect/api/
 $queryMeasurement.Stop()
 
 
-$jsona.Content | Out-File -FilePath C:\Users\user\Documents\papi.json
+# Iterate jsonresultat and count the number of AP's. 
+#   $_.state -eq "1" = Connected 
+#   $_.type -like "uap" = Access Point ?
+
+$jsona.Content | Out-File -FilePath C:\Users\user\Documents\api.json
 
 
 
