@@ -45,4 +45,6 @@ I have it just outputting a file to my documents folder. Obviously you can chang
 
 # Individual Files
 
-You will have to edit each file to match the path of the output above. I may test in a later version passing a variable between scripts to eliminate the need for files. 
+You will have to edit each file to match the path of the output above. I may test in a later version passing a variable between scripts to eliminate the need for files.
+
+All files as well will need to be also edited to match the MAC of the device you are trying to monitor. 
