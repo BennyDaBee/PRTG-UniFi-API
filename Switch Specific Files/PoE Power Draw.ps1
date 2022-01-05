@@ -1,6 +1,6 @@
 $jsonresultat = Get-Content -Path C:\Users\user\Documents\api.json | ConvertFrom-Json
 
-$jsonresultat.data | where-object type -like "usw" | ForEach-Object{
+$jsonresultat.data | where-object mac -like "00:00:00:00:00:00" | ForEach-Object{
 	$_.port_table | where-object poe_enable -eq "True" | ForEach-Object {
     $tpoeDraw = $_.poe_power 
     }
